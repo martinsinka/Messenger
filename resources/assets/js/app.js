@@ -12,7 +12,18 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('contact-component',
+	require('./components/ContactComponent.vue')
+);
+Vue.component('contact-list-component',
+	require('./components/ContactListComponent.vue')
+);
+Vue.component('active-conversation-component',
+	require('./components/ActiveConversationComponent.vue')
+);
+Vue.component('message-conversation-component',
+	require('./components/MessageConversationComponent.vue')
+);
 
 const app = new Vue({
     el: '#app',
