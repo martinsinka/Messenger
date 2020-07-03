@@ -37,7 +37,7 @@
                         <b-nav-item href="{{ route('login') }}">Login</b-nav-item>
                         <b-nav-item href="{{ route('register') }}">Registrarse</b-nav-item>
                     @else
-                        <b-nav-item-dropdown text="Username" right>
+                        <b-nav-item-dropdown text="{{ auth()->user()->name }}" right>
                             <b-dropdown-item href="#" @click="logout">Cerrar Sesion</b-dropdown-item>
                         </b-nav-item-dropdown>
                     @endif
